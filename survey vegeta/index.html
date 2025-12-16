@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VegeCup Feasibility Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .logo-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #4CAF50; /* Green color placeholder */
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .welcome-message {
+            margin-bottom: 30px;
+            color: #555;
+            font-size: 1.1em;
+        }
+        .proceed-btn {
+            background-color: #FF9800; /* Orange color for main action */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .proceed-btn:hover {
+            background-color: #E68900;
+        }
+        /* Hidden button style */
+        .admin-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: transparent; /* Makes it essentially invisible */
+            cursor: pointer;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="admin-btn" onclick="window.location.href='admin_login.html'">Admin</button>
+    <div class="container">
+        <div class="logo-placeholder">
+            [YOUR LOGO HERE]
+            <br>
+            VegeCup
+        </div>
+        <h1>Welcome to the VegeCup Feasibility Study!</h1>
+        <p class="welcome-message">
+            We are conducting a feasibility study on the introduction of **VegeCup** in the local market. 
+            Your honest participation will greatly help us in identifying the potential of this product. 
+            Rest assured that your answers will be treated with strict confidentiality and will be used for academic purposes only.
+        </p>
+        <button class="proceed-btn" onclick="window.location.href='demographics.html'">
+            Proceed to the Survey
+        </button>
+    </div>
+</body>
+</html>
